@@ -619,7 +619,7 @@ Variants {
                 duration: root.actualTransitionType === "none" ? 0 : 1000
                 easing.type: Easing.InOutCubic
                 onFinished: {
-                    if (nextWallpaper.source && nextWallpaper.status === Image.Ready) {
+                    if (nextWallpaper.source) {
                         currentWallpaper.source = nextWallpaper.source;
                     }
                     root.useNextForEffect = false;
